@@ -41,7 +41,7 @@ function Register() {
 function Login({ setLoggedIn }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const login = async () => {
+  const login = async () => {         
     try {
       const res = await api.post("/users/login", { username, password });
       localStorage.setItem("token", res.data.token);
