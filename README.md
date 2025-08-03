@@ -2,7 +2,9 @@
 
 
 
-This is a microservices application involving several components: Eureka Service Discovery, API Gateway, User Service, Train Service, Booking Service, Payment Service, Redis caching, Kafka messaging, JWT Security, React Frontend, and Docker containerization. 
+This is a microservices application for booking train tickets.
+This involves several components including:
+Eureka Service Discovery, API Gateway, User Service, Train Service, Booking Service, Payment Service, Redis caching, Kafka messaging, JWT Security, React Frontend, and Docker containerization. 
 
 
 ## Overview
