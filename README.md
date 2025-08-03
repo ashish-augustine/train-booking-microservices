@@ -1,7 +1,7 @@
 # Train Ticket Booking Using Spring Boot Microservices
 
 
-### Microsrvices
+### Microservices
 ### Kafka
 ### Eureka
 ### JWT
