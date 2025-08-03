@@ -2,7 +2,9 @@
 
 
 
-This is a microservices application for booking train tickets. <br/> 
+This is a Spring Boot application for booking the train tickets. <br/> The app uses Spring Boot Microserices in the backend and React in the front end. <br/> 
+
+
 This involves several components including: Eureka Service Discovery, API Gateway, User Service, Train Service, Booking Service, Payment Service, Redis caching, Kafka messaging, JWT Security, React Frontend, and Docker containerization. 
 
 
@@ -20,10 +22,18 @@ This involves several components including: Eureka Service Discovery, API Gatewa
 
 
 
+<br/> 
 
 
+## Important Concurrency Techniques Used:
+#### Asynchrony via Kafka: Spreads out load, prevents request burst from overwhelming services.
+#### Database ACID Transactions: Safely protects critical seat booking section from race conditions.
+#### Thread pools and Reactive clients (optionally) handle multiple requests in parallel.
+#### Stateless JWT Auth: No global locks or session blocking, enabling scalability.
 
+<br/> 
 
+This design leverages multi-threading at web server, Kafka consumer, and DB transaction levels combined with asynchronous messaging to ensure the entire system handles very high concurrency safely, avoiding common pitfalls like race conditions or request overload. <br/> 
 
 
 
