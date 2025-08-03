@@ -39,8 +39,7 @@ This design leverages multi-threading at web server, Kafka consumer, and DB tran
 
 
 
-## Workflow
-The workflow of the project is shown below:
+## Workflow 
 
 <img width="3840" height="1627" alt="Image" src="https://github.com/user-attachments/assets/5ddc05c8-1780-4813-b5c2-8b6877adba06" />
 
@@ -49,7 +48,7 @@ The workflow of the project is shown below:
  
 
 
-## How to run the project
+## How to run this project
 ---
 
 REQUIREMENTS:
