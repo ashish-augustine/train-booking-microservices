@@ -8,14 +8,14 @@ This is a microservices application involving several components: Eureka Service
 ## Overview
 
 #### Service discovery: Eureka Server
-### API Gateway: Zuul Gateway forwarding JWT token
-### Services: User, Train, Booking, Payment
-### Persistence: MySQL (or PostgreSQL), Redis cache for session/token
-### Security: JWT based authentication & authorization
-### Messaging: Kafka for async communication
-### Payment: Stripe integration (backend call)
-### Frontend: React + JWT token handling
-### Containerization: Docker for all services
+#### API Gateway: Zuul Gateway forwarding JWT token
+#### Services: User, Train, Booking, Payment
+#### Persistence: MySQL (or PostgreSQL), Redis cache for session/token
+#### Security: JWT based authentication & authorization
+#### Messaging: Kafka for async communication
+#### Payment: Stripe integration (backend call)
+#### Frontend: React + JWT token handling
+#### Containerization: Docker for all services
 
 
 
