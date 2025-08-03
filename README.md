@@ -6,7 +6,8 @@ This is a microservices application involving several components: Eureka Service
 
 
 ## Overview
-### Service discovery: Eureka Server
+
+#### Service discovery: Eureka Server
 ### API Gateway: Zuul Gateway forwarding JWT token
 ### Services: User, Train, Booking, Payment
 ### Persistence: MySQL (or PostgreSQL), Redis cache for session/token
