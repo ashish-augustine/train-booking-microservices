@@ -22,15 +22,7 @@ This is a microservices application involving several components: Eureka Service
 
 
 
-  Microservices / 
- Kafka / 
-  Eureka / 
- JWT / 
-  Stripe / 
- Multithreading / 
- Concurrency / 
-  Redis / 
-  Docker
+
 
 
 
