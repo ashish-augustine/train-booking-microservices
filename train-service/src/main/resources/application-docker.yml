@@ -1,0 +1,43 @@
+server:
+  port: 9002
+
+spring:
+  application:
+    name: TRAIN-SERVICE
+  profiles: docker
+  datasource:
+    url: jdbc:mysql://mysql:3306/traindb?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+    username: appuser
+    password: apppassword
+  jpa:
+    hibernate:
+      ddl-auto: update
+    defer-datasource-initialization: true
+  sql:
+    init:
+      mode: always
+  redis:
+    host: ${SPRING_REDIS_HOST:redis}
+    port: ${SPRING_REDIS_PORT:6379}
+  kafka:
+    bootstrap-servers: kafka:9092
+    consumer:
+      group-id: train-service-group
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-server:8761/eureka/
+
+redis:
+  host: redis
+  port: 6379
+
+jwt:
+  secret: myVerySecretKeyForJwtSigningThatIsVeryLong1234567890

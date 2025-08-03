@@ -1,0 +1,29 @@
+server:
+  port: 9003
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-server:8761/eureka/
+
+stripe:
+  api:
+    key: sk_test_XXXXXXXXXXXXXXXXXXXXXXXX
+
+spring:
+  application:
+    name: payment-service
+  profiles: docker
+  kafka:
+    bootstrap-servers: kafka:9092
+    consumer:
+      group-id: payment-service-group
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+
+jwt:
+  secret: myVerySecretKeyForJwtSigningThatIsVeryLong1234567890

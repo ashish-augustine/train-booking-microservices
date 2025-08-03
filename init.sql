@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS userdb;
+CREATE DATABASE IF NOT EXISTS traindb;
+CREATE DATABASE IF NOT EXISTS ticketdb;
+
+CREATE USER IF NOT EXISTS 'appuser'@'%' IDENTIFIED BY 'apppassword';
+GRANT ALL PRIVILEGES ON userdb.* TO 'appuser'@'%';
+GRANT ALL PRIVILEGES ON traindb.* TO 'appuser'@'%';
+GRANT ALL PRIVILEGES ON ticketdb.* TO 'appuser'@'%';
+FLUSH PRIVILEGES;
