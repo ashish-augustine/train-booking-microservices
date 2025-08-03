@@ -1,14 +1,14 @@
 # Train Ticket Booking Using Spring Boot Microservices
 
 
-  Microservices
- Kafka
-  Eureka
- JWT
-  Stripe
- Multithreading
- Concurrency
-  Redis
+  Microservices / 
+ Kafka / 
+  Eureka / 
+ JWT / 
+  Stripe / 
+ Multithreading / 
+ Concurrency / 
+  Redis / 
   Docker
 
 
