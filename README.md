@@ -10,26 +10,26 @@ This involves several components including: Eureka Service Discovery, API Gatewa
 
 ## Overview
 
-#### Service discovery: Eureka Server
-#### API Gateway: Zuul Gateway forwarding JWT token
-#### Services: User, Train, Booking, Payment
-#### Persistence: MySQL (or PostgreSQL), Redis cache for session/token
-#### Security: JWT based authentication & authorization
-#### Messaging: Kafka for async communication
-#### Payment: Stripe integration (backend call)
-#### Frontend: React + JWT token handling
-#### Containerization: Docker for all services
+  Service discovery: Eureka Server <br/> 
+ API Gateway: Zuul Gateway forwarding JWT token <br/> 
+ Services: User, Train, Booking, Payment <br/> 
+  Persistence: MySQL (or PostgreSQL), Redis cache for session/token <br/> 
+ Security: JWT based authentication & authorization <br/> 
+ Messaging: Kafka for async communication <br/> 
+  Payment: Stripe integration (backend call) <br/> 
+ Frontend: React + JWT token handling <br/> 
+  Containerization: Docker for all services <br/> 
 
 
 
 <br/> 
 
 
-## Important Concurrency Techniques Used:
-#### Asynchrony via Kafka: Spreads out load, prevents request burst from overwhelming services.
-#### Database ACID Transactions: Safely protects critical seat booking section from race conditions.
-#### Thread pools and Reactive clients (optionally) handle multiple requests in parallel.
-#### Stateless JWT Auth: No global locks or session blocking, enabling scalability.
+## Important Concurrency Techniques Used: 
+ Asynchrony via Kafka: Spreads out load, prevents request burst from overwhelming services.  <br/> 
+ Database ACID Transactions: Safely protects critical seat booking section from race conditions. <br/> 
+  Thread pools and Reactive clients (optionally) handle multiple requests in parallel. <br/> 
+ Stateless JWT Auth: No global locks or session blocking, enabling scalability. <br/> 
 
 <br/> 
 
