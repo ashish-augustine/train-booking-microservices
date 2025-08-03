@@ -17,7 +17,7 @@ function Register() {
       await api.post("/users/register", { username, password });
       alert("Registered! Please login.");
     } catch {
-      alert("Registration failed");
+      alert("Registration failed");  
     }
   };
 
@@ -50,7 +50,7 @@ function Login({ setLoggedIn }) {
       alert("Login failed");
     }
   };
-
+      
   return (
     <div>
       <h2>Login</h2>
